@@ -1,0 +1,83 @@
+.signUpBtn {
+    letter-spacing: .5mm;
+}
+
+.contentH1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 991px){
+    .contentH1 {
+        font-size: 2.5rem;
+    }
+}
+
+.homeImg img {
+    width: 75%;
+}
+
+.gifInfo img {
+    width: 200px;
+}
+
+.loginForm {
+    width: 25%;
+    border-radius: 5px;
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+    border: 2px solid #425b42;
+    box-shadow: 2px 2px 2px #4f7166;
+}
+
+.logoAuth {
+    align-self: center;
+    margin-bottom: 20px;
+    width: 40px;
+}
+
+.regisLoginMail {
+    min-height: 70vh;
+}
+
+@media (max-width: 991px){
+    .loginForm {
+        width: 80%;
+        margin-top: 15vh;
+        border: 2px solid #56e4b5;
+    }
+}
+
+.aboutInfo {
+    background-color: #b0f4dd;
+    margin-top: 20vh;
+    margin-bottom: 29vh;
+    border-radius: 5px;
+}
+
+.devsFb{
+    text-decoration: none;
+    color: #292a29;
+}
+
+.stocksMain {
+    min-height: 80vh;
+}
+
+.toolsMain{
+    min-height: 70vh;
+}
+
+.toolsMain img {
+    width: 150px;
+}
+
+.footer {
+    background-color: #4f7166;
+    color: #e8eceb;
+    height: 15vh;
+}
+
+.homeSection {
+    height: 92vh;
+}
+

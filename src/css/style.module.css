@@ -1,0 +1,1478 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body {
+    margin: 0;
+}
+/* css for NavigationBar */
+
+.navi {
+    overflow: auto;
+}
+
+nav {
+    height: 8vh;
+    background-color: #52ab98;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navBrand {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navBrand:hover {
+    color:white;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+.navList {
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    font-weight:700;
+    padding-right: 30px;
+
+}
+
+.naviposition {
+    position: relative;
+    bottom: 5px;
+}
+
+.navItem {
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+.canvasBody {
+    background-color: #52ab98 !important;
+}
+
+.dropBtn {
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown {
+    color: white;
+    background-color: #52ab98 !important;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: fit-content;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropdownitem {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navItem:hover {
+    color:white;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+.navIcon {
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+
+.navOffCanvas {
+    background-color: #F0F0F0;
+    width: 250px !important;
+}
+
+
+
+
+/* css for DisplayStock */
+.stockHeader {
+    height: 12vh;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    position: fixed;
+    top: 8vh;
+    width: 100%;
+}
+
+.createBtn {
+    background-color: #52ab98 ;
+    color: white;
+    width: 100px;
+    height: 32px;
+    border: none;
+    border-radius:5px;
+}
+
+.createBtn:hover {
+    background-color: #2b6777;
+}
+
+.createBtn:active {
+    background-color: #52ab98
+}
+
+.filterByCategory {
+
+    width: 250px;
+    height: 5.5VH;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #52ab98;
+    background-color: #F7F7F7;
+    color: #757575;
+}
+
+.filterLabel {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*  */
+.displaySearch {
+    width: 250px;
+    height: 5.5vh;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #52ab98;
+    background-color: #F7F7F7;
+}
+
+
+.stockSection {
+    max-height: 78vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12vh;
+    overflow-y: auto;
+}
+
+.perProductLink {
+    height:20vh ;
+    width: 23%;
+    margin: 1%;
+    border: 1px solid #52ab98;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.perProductLink:hover {
+    background-color: #52ab98;
+    color: white;
+}
+
+.stockImage {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productImage {
+    height:80%;
+
+}
+
+.productDetails {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.productDetails p {
+    margin: 0;
+}
+
+/* STOCKS MODAL ------------ STOCKS MODAL---------------STOCKS MODAL*/
+
+.modalHeader {
+    background-color: #52ab98;
+    color: white;
+}
+
+.cancelBtn {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #2b6777;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    font-weight: bold;
+}   
+
+.cancelBtn:hover {
+    background-color: #2b6777;
+    color: white;
+}
+
+.cancelBtn:active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.addBtn {
+    background-color: #52ab98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 150px;
+    font-weight: bold;
+}  
+
+.addBtn:hover {
+    background-color:#c8d8e4;
+    color: black;
+    border: 1px solid #2b6777;
+}
+
+.addBtn:active {
+    background-color: #52ab98;
+    color: white;
+}
+
+/* PER PRODUCT DETAIL -------------- PRODUCT DETAIL------------*/
+
+.perProductDisplayMain {
+    height: 70vh;
+    /* margin-top: 8vh; */
+}
+
+.perProductDisplaySection {
+    height: 70vh;
+    width: 80%;
+    border: 1px solid #2b6777;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 6vh;
+    display: flex;
+}
+
+.displayImage {
+    height: 100%;
+    width: 50%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perProductImage {
+    height: 90%;
+    /* width: 90%; */
+}
+
+.displayDetail {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellowgreen; */
+}
+
+.displayItem {
+    display: flex;
+}
+
+.displayTag {
+    width: 33.33%;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+}
+
+.displayValue {
+    width: 66.66%;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+}
+
+.btnContainer {
+    display: flex;
+}
+
+.updateBtn {
+    width: 80%;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #52ab98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.updateBtn:hover {
+    background-color: #c8d8e4;
+    color: black;
+    border: 1px solid #2b6777;
+}
+
+.updateBtn:active {
+    background-color: #52ab98;
+    color: white;
+}
+
+.deleteBtn {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #2b6777;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.deleteBtn:hover {
+    background-color: #2b6777;
+    color: white;
+}
+
+.deleteBtn:active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* END OF PRODUCT DETAIL ----------------- END OF PRODUCT DETAIL */
+
+
+/* POS CSS -------------------POS CSS -------------- */
+
+.posMain {
+    height: 92vh;
+    /* margin-top: 8vh; */
+    width: 100%;
+    display: flex;
+}
+
+.counterSection {
+    width: 35%;
+    height: 92vh;
+    border-right: 2px solid gray;
+    /* border: 1px solid black; */
+    /* background-color: yellowgreen; */
+}
+
+.counterHeader {
+    height: 10vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.displaySection {
+    width: 65%;
+    height: 92vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: block;
+    /* background-color: red; */
+}
+
+.displayHeader {
+    height: 10vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+/* .posLabels {
+    font-style: italic;
+    font-weight: 600;
+} */
+.searchContainer {
+    margin-left: 30px;
+    margin-top: 8px;
+    display: flex;
+}
+
+.posSearch {
+    width: 250px;
+    height: 5.5vh;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #52ab98;
+    background-color: #F7F7F7;
+}
+
+.posFilter {
+    width: 250px;
+    height: 5.5VH;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #52ab98;
+    background-color: #F7F7F7;
+    color: #757575;
+}
+
+.displayProductArticle {
+    display: flex;
+    /* justify-content: center; */
+    height: 76vh;
+    width: 95%;
+    margin-top: 20px;
+    overflow: auto;
+    /* border: 1px solid black */
+   
+}
+
+.productBtn {
+    height: 120px;
+    width: 120px;
+    margin: 1%;
+    border: none;
+    border: 1px solid #52ab98;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.posProduct {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.productQty {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #F0F0F0;
+    z-index: 1;
+}
+
+.resellPrice {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    font-size: 12px;
+    background-color: white;
+    z-index: 1;
+}
+
+/* POS COUNTER */
+
+.counterContainer {
+    height: 60vh;
+    /* background-color: #52ab98; */
+    overflow-y: auto;
+    border-bottom: 2px solid gray;
+}
+
+.posTableContainer {
+    /* height: 60vh; */
+    /* background-color: yellow; */
+    width: 100%;
+}
+
+.posTableHeader {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    border-bottom: 1px solid gray;
+}
+
+/* .noProdText {
+    position: relative;
+    left: -60px;
+    top: 25vh;
+    width: 100%;
+} */
+
+.posCounterSummary {
+    height: 21vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: gray; */
+}
+
+.posSubmitBtn {
+    height: 40px;
+    width: 90%;
+    align-self: center;
+    background-color: #52ab98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.posSubmitBtn:hover {
+    background-color: #c8d8e4;
+    color: black;
+    border: 1px solid #2b6777;
+}
+
+.posSubmitBtn:active {
+    background-color: #52ab98;
+    color: white;
+}
+
+.counterBtn {
+    opacity: .1;
+    font-size: 20px;
+    position: relative;
+    /* font-size: 25px; */
+}
+
+.counterBtn:hover {
+    opacity: 1;
+}
+
+.icon1 {
+    position: absolute;
+    font-size: 30px;
+    right: 0px;
+}
+
+.icon2 {
+    position: absolute;
+    font-size: 30px;
+    left: 1px;
+}
+
+.dataListCounter {
+    height: 30px;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #52ab98;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    margin-left: 20px;
+    display: none;
+    /* margin-top: 20px; */
+}
+
+.dataListAddBtn {
+    height: 30px;
+    width: 100px;
+    margin-right: 20px;
+    background-color: #52ab98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* TRANSACTION CSS-------------TRANSACTION CSS */
+
+
+.viewDetailsBtn {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #2b6777;
+    border-radius: 5px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.viewDetailsBtn:hover {
+    background-color: #2b6777;
+    color: white;
+}
+
+.viewDetailsBtn:active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.mainTransactionDetail {
+    min-height: 92vh;
+    width: 100%;
+    margin-top: 8vh;
+    /* background-color: #757575; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sectionTransactionDetail {
+    min-height: 80vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #52ab98;
+    
+}
+
+.tableTransactionDetail {
+    width: 100%;
+}
+.headerTransactionDetail {
+    text-align: center;
+    
+}
+
+.cashReceipt {
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px ridge gainsboro;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    width: 90%; 
+    font-weight: bolder;
+}
+
+.receiptSummary {
+    border-top: 1px solid gainsboro;
+
+}
+
+.footerTransactionDetail {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid gainsboro;
+}
+
+/* TRANSACTION DISPLAY */
+
+.mainTransactionDisplay {
+    height: 92vh;
+    /* margin-top: 8vh; */
+    /* background-color: gray; */
+}
+
+.headerTransactionDisplay {
+    height: 8vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.sortTransaction {
+    width: 200px;
+    height: 4vh;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #52ab98;
+    margin-right: 20px;
+    background-color: #f7f7f7;
+}
+
+.sectionTransactionDisplay {
+    min-height: 74vh;
+    width: 95%;
+    margin: 10px auto;
+    border: 1px solid #52ab98;
+    border-radius: 20px;
+    /* background-color: gray; */
+}
+
+.footerTransactionDisplay {
+    height: 4vh;
+}
+
+.tableTransactionDisplay {
+    width: 100%;
+    /* border: 1px solid #52ab98; */
+    margin:auto;
+    /* margin: 0; */
+    font-family: 'Lato', sans-serif;
+}
+
+.tableHeader {
+    /* background-color: #c3f9ed; */
+    border-radius: 20px;
+}
+
+.printBtn {
+    height: 40px;
+    width: 300px;
+    align-self: center;
+    background-color: #2b6777;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.printBtn:hover {
+    background-color: #c8d8e4;
+    color: black;
+    border: 1px solid #2b6777;
+}
+
+.printBtn:active {
+    background-color: #52ab98;
+    color: white;
+}
+
+/* SALES CSS */
+
+.mainSales {
+    height: 92vh;
+    /* margin-top: 8vh; */
+    width: 100%;
+    /* background-color: #c8d8e4; */
+}
+
+.headerSales {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    color: #52ab98;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    font-family: 'Bebas Neue', cursive;
+}
+
+.sectionSales {
+    /* background-color: #52ab98; */
+    height: 77vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.desc {
+    margin: 0;
+    font-size: 12px;
+    font-weight: lighter;
+    color: gray;
+}
+
+/* USER CSS */
+.mainLogin {
+    height: 92vh;
+    /* margin-top: 8vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #757575; */
+}
+
+/* .headerLogin {
+    height: 8vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+} */
+
+.sectionLogin {
+    height: fit-content;
+    padding-bottom: 8vh;
+    width: 35%;
+    border: 3px solid #52ab98;
+
+    border-radius: 20px;
+    /* background-color: #52ab98; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and  (max-width: 768px) {
+    .sectionLogin {
+        height: 85vh;
+        width: 90%;
+        border: 3px solid #52ab98;
+    
+        border-radius: 20px;
+        /* background-color: #52ab98; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.loginBtn {
+    height: 50px;
+    max-width: 250px;
+    align-self: center;
+    background-color: #52ab98;
+    color: white;
+    letter-spacing: .5mm;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.loginBtn:hover {
+    background-color: #c8d8e4;
+    color: black;
+    border: 1px solid #2b6777;
+}
+
+.loginBtn:active {
+    background-color: #52ab98;
+    color: white;
+}
+
+.loginInput {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #2b6777;
+    border-radius: 5px;
+}
+
+
+/* HOME CSS */
+.homeSection {
+    height: 92vh;
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* background-color: gray; */
+}
+
+.featureSection {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space;
+    justify-content:space-evenly;
+    /* background-color: yellow; */
+}
+
+@media (max-width: 991px){
+    .featureImages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featureImages img {
+        display: block;
+        max-width:290px;
+        max-height:150px;
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .titleHeader {
+        font-size: 20px !important;
+    }
+}
+
+.featureImages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureImages img {
+    /* width: 20%; */
+    height: 60vh;
+}
+
+
+
+.tagLine {
+    color: #52ab98;
+    font-size: 3.5rem;
+}
+
+@media (min-width: 991px){
+    .tagLine {
+        font-size: 5.6rem;
+    }
+}
+
+.titleHeader {
+    height: 8vh;
+    font-size: 3.5rem !important;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and  (max-width: 920px) {
+    /* .navItem {
+        display: none;
+    } */
+
+    .navIcon {
+        display: block;
+    }
+
+    /* STOCKS MEDIA QUERY */
+
+    .perProductLink {
+        height:20vh ;
+        width: 45%;
+        margin: 2.5%;
+        border: 1px solid #52ab98;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+
+    .stockImage {
+        width: 55%;
+    }
+    
+    .productImage {
+        height:95%;
+    }
+    
+    .productDetails {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .createBtn {
+        background-color: #52ab98 ;
+        color: white;
+        width: 100px;
+        height: 32px;
+        border: none;
+        border-radius:5px;
+    }
+    
+    .createBtn:hover {
+        background-color: #2b6777;
+    }
+    
+    .createBtn:active {
+        background-color: #52ab98
+    }
+
+    .filterByCategory {
+        width: 200px;
+        height: 5vh;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid #52ab98;
+    }
+    
+    .filterLabel {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    /*MEDIA QUERY FOR PER PRODUCT DETAIL -------------- PRODUCT DETAIL------------*/
+
+.perProductDisplayMain {
+    height: 82vh;
+    margin-top: 8vh;
+}
+
+.perProductDisplaySection {
+    height: 80vh;
+    width: 80%;
+    border: 1px solid #2b6777;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 14vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayImage {
+    height: 100%;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perProductImage {
+    height: 100%;
+    /* width: 90%; */
+}
+
+.displayDetail {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellowgreen; */
+}
+
+.displayItem {
+    display: flex;
+}
+
+.displayTag {
+    width: 50%;
+    font-size: 22px;
+    /* margin-left: 20%; */
+}
+
+.displayValue {
+    width: 50%;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.updateBtn {
+    background-color: #52ab98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* END OF MEDIA QUERY PRODUCT DETAIL ----------------- END OF PRODUCT DETAIL */
+
+/* POS MEDIA QUERY */
+
+.displaySection {
+    display: none;
+}
+
+.counterSection {
+    width: 97%;
+    height: 60vh;
+    border: none;
+}
+
+.counterHeader {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dataListCounter {
+
+    display: block;
+
+}
+/* .dataListAddBtn {} */
+}
+
+
+
+/* css for ShowProduct */
+
+.cardBodyShowProduct {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* POS SECTION */
+
+/* CSS for Displaying Product at POS */
+
+.productItem {
+    border: 1px solid rgb(185, 181, 181);
+    height: 110px;
+    width: 110px;
+    border-radius: 8px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.posProduct {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.productQty {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    z-index: 1;
+}
+
+.posCounterBody {
+    height: 55vh;
+    /* background-color: red; */
+    overflow-y: auto;
+}
+
+.counterFunctions {
+    border-top: 2px solid gray;
+    height: 15vh;
+    /* background-color: gray; */
+}
+
+/* css for transactions */
+
+.tableBody {
+    background-color: yellow;
+    height: 75vh;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and  (max-width: 360px) {
+    /* .navItem {
+        display: none;
+    } */
+
+    .navIcon {
+        display: block;
+    }
+
+    /* STOCKS MEDIA QUERY */
+
+    .perProductLink {
+        height:20vh ;
+        width: 100%;
+        margin: 2.5%;
+        border: 1px solid #52ab98;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+
+    .stockImage {
+        width: 55%;
+    }
+    
+    .productImage {
+        height:95%;
+    }
+    
+    .productDetails {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .createBtn {
+        background-color: #52ab98 ;
+        color: white;
+        width: 100px;
+        height: 32px;
+        border: none;
+        border-radius:5px;
+    }
+    
+    .createBtn:hover {
+        background-color: #2b6777;
+    }
+    
+    .createBtn:active {
+        background-color: #52ab98
+    }
+
+    .stockHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filterByCategory {
+        width: 200px;
+        height: 4vh;
+        border: none;
+        border-radius: 5px;
+        border-bottom: 2px solid #52ab98;
+    }
+    .displaySearch {
+        width: 200px;
+        height: 5.5vh;
+        border: none;
+        border-radius: 5px;
+        border-bottom: 2px solid #52ab98;
+        background-color: #F7F7F7;
+        /* display: none; */
+    }
+    
+    .filterLabel {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    /*MEDIA QUERY FOR PER PRODUCT DETAIL -------------- PRODUCT DETAIL------------*/
+
+.perProductDisplayMain {
+    height: 82vh;
+    margin-top: 8vh;
+}
+
+.perProductDisplaySection {
+    height: 80vh;
+    width: 80%;
+    border: 1px solid #2b6777;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 14vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayImage {
+    height: 100%;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perProductImage {
+    height: 100%;
+    /* width: 90%; */
+}
+
+.displayDetail {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellowgreen; */
+}
+
+.displayItem {
+    display: flex;
+}
+
+.displayTag {
+    width: 50%;
+    font-size: 22px;
+    /* margin-left: 20%; */
+}
+
+.displayValue {
+    width: 50%;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.updateBtn {
+    background-color: #52ab98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* END OF MEDIA QUERY PRODUCT DETAIL ----------------- END OF PRODUCT DETAIL */
+
+/* POS MEDIA QUERY */
+
+.displaySection {
+    display: none;
+}
+
+.counterSection {
+    width: 97%;
+    height: 60vh;
+    border: none;
+}
+
+.counterHeader {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dataListCounter {
+
+    display: block;
+
+}
+/* .dataListAddBtn {} */
+}
+
+
+
+/* css for ShowProduct */
+
+.cardBodyShowProduct {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* POS SECTION */
+
+/* CSS for Displaying Product at POS */
+
+.productItem {
+    border: 1px solid rgb(185, 181, 181);
+    height: 110px;
+    width: 110px;
+    border-radius: 8px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.posProduct {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.productQty {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    z-index: 1;
+}
+
+.posCounterBody {
+    height: 55vh;
+    /* background-color: red; */
+    overflow-y: auto;
+}
+
+.counterFunctions {
+    border-top: 2px solid gray;
+    height: 15vh;
+    /* background-color: gray; */
+}
+
+/* css for transactions */
+
+.tableBody {
+    background-color: yellow;
+    height: 75vh;
+    overflow-y: auto;
+}
+
