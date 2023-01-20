@@ -187,10 +187,10 @@ nav {
 
 
 .stockSection {
-    max-height: 78vh;
+    max-height: 64vh;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 12vh;
+    /* margin-top: 12vh; */
     overflow-y: auto;
 }
 
