@@ -16,6 +16,8 @@ import Ffstockshow from '../images/ffstockshow.png'
 import Ffpos from '../images/ffpos.png'
 import Ffsales from '../images/ffsales.png'
 import Fftranasctions from '../images/fftransactions.png'
+import { Link } from 'react-router-dom';
+
 
 
 function Home() {
@@ -31,7 +33,8 @@ function Home() {
                   <h1 className={styles.tagLine}>FUN & EASY</h1>
               </div>
               <div className='d-flex justify-content-center ms-md-5 mt-md-3'>
-                <a href='/signUp' className='btn btn-success signUpBtn'>SIGNUP NOW!</a>
+                  <Link to="/user" className='btn btn-success signUpBtn'>SIGN UP NOW!</Link>
+                {/* <a href='/signUp' className='btn btn-success signUpBtn'>SIGNUP NOW!</a> */}
               </div>
             </div>
             <div className='homeImg d-flex justify-content-center'>
