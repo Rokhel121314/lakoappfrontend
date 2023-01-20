@@ -37,7 +37,7 @@ function NavBars() {
   return (
     <>
       {['xxl'].map((expand) => (
-        <Navbar key={expand}  expand={expand} className="mb-0">
+        <Navbar key={expand}  expand={expand} className="pb-5">
           <Container fluid className={styles.naviposition}>
             <Navbar.Brand>
                 <Link to="/" className={styles.navBrand}>LAKO</Link>

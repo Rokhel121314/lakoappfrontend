@@ -132,18 +132,23 @@ nav {
     justify-content: space-between;
     border: none;
     border-bottom: 1px solid rgb(232, 232, 232);
-    position: fixed;
-    top: 8vh;
+    position: relative;
     width: 100%;
 }
 
 .createBtn {
     background-color: #52ab98 ;
     color: white;
-    width: 100px;
+    width: 90px;
     height: 32px;
     border: none;
     border-radius:5px;
+}
+
+@media (max-width: 991px){
+    .stockHeader {
+        height: 20vh;
+    }
 }
 
 .createBtn:hover {
@@ -157,7 +162,7 @@ nav {
 .filterByCategory {
 
     width: 250px;
-    height: 5.5VH;
+    height: 5.5vh;
     border: none;
     border-radius: 5px;
     border-bottom: 2px solid #52ab98;
@@ -678,6 +683,7 @@ nav {
 }
 
 .footerTransactionDetail {
+    background-color: #52ab98;
     text-align: center;
     margin-top: 10px;
     padding-top: 10px;
@@ -783,6 +789,31 @@ nav {
     font-family: 'Bebas Neue', cursive;
 }
 
+.footerSalesDisplay {
+    height: 4vh;
+    
+}
+
+@media ( max-width: 991px){
+    .headerSales {
+        height: 20vh;
+    }
+    .mainSales {
+        height: 50vh;
+
+    }
+    .sectionSales{
+        height: 20vh;
+        overflow-y: auto;
+    }
+    .footerSalesDisplay {
+        height: 10vh;
+        
+    }
+
+
+}
+
 .sectionSales {
     /* background-color: #52ab98; */
     height: 77vh;
@@ -883,7 +914,7 @@ nav {
 /* HOME CSS */
 .homeSection {
     height: 92vh;
-    margin-top: 8vh;
+    /* margin-top: 5vh; */
     display: flex;
     align-items: center;
     justify-content: space-around;

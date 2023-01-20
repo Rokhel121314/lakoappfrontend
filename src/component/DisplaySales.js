@@ -116,9 +116,9 @@ function DisplaySales(props) {
     <>
     <main className={styles.mainSales}>
       <header className={styles.headerSales}>
-        <h4 className='m-0 ps-2'>SALES SUMMARY</h4>
-        <div className='d-flex align-item-center me-5'>
-          <p className='m-0 p-0 me-5 h5'>TOTAL SOLD ITEM: {totalQty.toFixed(2)} PCS</p>
+        <h4 className='m-0 ps-2 pe-5 me-5 pe-md-0 me-md-0'>SALES SUMMARY</h4>
+        <div className='d-flex align-item-center me-5 ms-5'>
+          <p className='m-0 p-0 me-5 ps-5 h5'>TOTAL SOLD ITEM: {totalQty.toFixed(2)} PCS</p>
           <p className='m-0 p-0 me-5 h5'>TOTAL RESELL AMOUNT: &#8369; {totalGrossResell.toFixed(2)}</p>
           <p className='m-0 p-0 me-5 h5'>TOTAL ORIGINAL AMOUNT: &#8369; {totalGrossOriginal.toFixed(2)}</p>
           <p className='m-0 p-0 me-5 h5'>TOTAL NET REVENUE: &#8369; {(totalGrossResell-totalGrossOriginal).toFixed(2)}</p>
@@ -192,7 +192,7 @@ function DisplaySales(props) {
         </div>
        
       </section>
-      <footer className={styles.footerTransactionDisplay}>
+      <footer className={styles.footerSalesDisplay}>
       <ReactPaginate
         breakLabel="..."
         nextLabel="next >"

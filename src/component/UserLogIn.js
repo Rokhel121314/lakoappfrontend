@@ -45,6 +45,10 @@ function UserLogIn() {
   };
 
 
+  const redirectHome = () => {
+    navigate("/")
+  };
+
   useEffect(() => {
     window.localStorage.setItem("isAut", isAuth);
   }, [isAuth]);
@@ -82,7 +86,7 @@ const reRenderPage = () => {
               <div className="form-check d-flex flex-column align-items-center">
                   <span>{loginStatus}</span>
             </div>
-                  <button type='submit' onClick={()=> {login()}} className={styles.loginBtn}>Login</button>
+                  <button type='submit' onClick={()=> {login();}} className={styles.loginBtn}>Login</button>
                 <div className='mt-4'>
                     <span>Don't have an account? SignUp,<Link to='/register'>HERE</Link></span>
                 </div>

@@ -34,7 +34,6 @@ function Home() {
               </div>
               <div className='d-flex justify-content-center ms-md-5 mt-md-3'>
                   <Link to="/user" className='btn btn-success signUpBtn'>SIGN UP NOW!</Link>
-                {/* <a href='/signUp' className='btn btn-success signUpBtn'>SIGNUP NOW!</a> */}
               </div>
             </div>
             <div className='homeImg d-flex justify-content-center'>
@@ -48,12 +47,12 @@ function Home() {
         <p className={styles.titleHeader}>FEATURES</p>
         <div className={styles.featureImages}>
             
-            <div className='d-flex flex-column flex-lg-row align-items-center justify-content-center'> 
-              <img src={Ffstocks} alt='stocks' />
+            <div className='d-flex flex-column flex-lg-row align-items-center justify-content-center my-lg-5'> 
+              <img className='me-lg-5' src={Ffstocks} alt='stocks' />
               <img src={Ffstockshow} alt='stockshow' />
             </div>
-            <div className='d-flex flex-column flex-lg-row align-items-center justify-content-center'>
-              <img src={Ffpos} alt='pos' />
+            <div className='d-flex flex-column flex-lg-row align-items-center justify-content-center mb-lg-5'>
+              <img className='me-lg-5' src={Ffpos} alt='pos' />
               <img src={Fftranasctions} alt='transactions' />
             </div>
             <img src={Ffsales} alt='sales' />
